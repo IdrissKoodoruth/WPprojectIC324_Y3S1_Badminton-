@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+	height: 100vh;
+	font-family: "Raleway", sans-serif;
+	background: #2F3238;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("home1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navigation{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.img{
+    margin: auto;
+    padding: 35px 0;
+}
+
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    position: relative;
+    top: 0px;
+    left: 0;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navigation ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navigation ul li:hover::after{
+    width: 100%;
+}
+
+.intro{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.intro h1{
+    font-size: 50px;
+    margin-top: 20px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.intro p{
+    margin: 20px 100px;
+    font-weight: 100;
+    line-height: 25px;
+}
+.row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.image{
+	background: #50A7FF;
+	position: relative;
+	flex: 1;
+	max-width: 460px;
+	height: 300px;
+	margin: 20px;
+	overflow: hidden;
+}
+
+.image img{
+	opacity: 0.8;
+	position: relative;
+	vertical-align: top;
+	transition: 0.6s;
+	transition-property: opacity;
+}
+
+.image:hover img{
+	opacity: 1;
+}
+
+.image .details{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.image .details h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 70px;
+	transition: 0.4s;
+	transition-property: transform;
+}
+
+.image .details h2 span{
+	font-weight: 900;
+}
+
+.image:hover .details h2{
+	transform: translateY(-30px);
+}
+
+
+.image .details p{
+	margin: 30px 30px 0 30px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	opacity: 0;
+	transition: 0.6s;
+	transition-property: opacity, transform;
+}
+
+.image:hover .details p{
+	opacity: 1;
+	transform: translateY(-40px);
+}
+
+.more{
+	position: absolute;
+	background: rgba(255, 255, 255, 0.8);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0 15px 0;
+	bottom: -60px;
+	transition: 0.6s;
+	transition-property: bottom;
+}
+
+.image:hover .more{
+	bottom: 0;
+}
+
+.more .read-more{
+	color: #000;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.more .read-more span{
+	font-weight: 500;
+}
+
+.more .icon-links i{
+	color: #000;
+	font-size: 20px;
+}
+
+.more .icon-links a:not(:last-child) i{
+	margin-right: 20px;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1080px){
+	.image{
+		flex: 100%;
+		max-width: 480px;
+	}
+}
+
+@media (max-width: 400px){
+	.image .details p{
+		font-size: 16px;
+	}
+
+	.more .read-more, .more .icon-links a i{
+		font-size: 18px;
+	}
+}
+
+html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    color:#fff;
+    /*text-align: center;*/
+    background: linear-gradient(to right, #026992 ,#009688);
+    padding: 100px 0 30px;
+    
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col .logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+footer input{
+    width: 100%;
+    background: transparent;
+    color:#ccc;
+    border: 1px solid;
+    outline: #fff;
+}
+
+footer input::placeholder{
+    color:#ccc;
+}
+
+footer button{
+    background: #026992;
+    border: 1px solid;
+    outline: #fff;
+    cursor: pointer;
+    color:#ccc;
+    padding: 5px 10px;
+    float: right;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+
+
+/* Theme */
+:root{
+    --clr-body-bg: (0 0% 90%)
+    --clr-card-bg: (0 0% 100%)
+    --clr-text: (0 0% 15%)
+    --clr-heading: (0 0% 25%)
+  }
+.visually-hidden{
+    clip:rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .color-picker > fieldset{
+    text-transform: capitalize;
+    border: 3px double #ccc;
+    display: flex;
+    gap: 2rem;
+    width: fit-content ;
+    background: #026992;
+    padding: 20px;
+    margin-inline: auto;
+    border-radius: 5px ;
+  }
+  .color-picker input[type="radio"]{
+    appearance:none;
+    width: 2rem;
+    height: 2rem;
+    outline: 3px solid var(--radio-color, currentColor);
+    outline-offset: 3px;
+    border-radius: 50%;
+  
+  }
+  .color-picker input[type="radio"]:checked
+  {
+    background-color: var(--radio-color);
+    
+  }
+
+  .color-picker input[type="radio"]#light{
+    --radio-color: rgb(245, 247, 239);
+  
+  }
+  .color-picker input[type="radio"]#pink{
+    --radio-color: rgb(218, 70, 141);
+  
+  }
+  .color-picker input[type="radio"]#blue{
+    --radio-color: blue;
+    
+  }
+  .color-picker input[type="radio"]#dark{
+    --radio-color: black;
+  }
+  
+  .light,
+  :root:has(#light:checked)
+  {
+    --clr-body-bg: hsl(320, 18%, 90%);
+    --clr-text: hsl(311, 22%, 90%);
+    --clr-heading: hsl(311, 22%, 90%);
+  }
+
+  .pink,
+  :root:has(#pink:checked)
+  {
+    --clr-body-bg: hsl(323, 66%, 64%);
+    --clr-text: hsl(316, 82%, 64%);
+    --clr-heading: hsl(310, 98%, 52%);
+  }
+    
+
+  .blue,
+  :root:has(#blue:checked){
+    --clr-body-bg: hsl(209, 85%, 49%);
+    --clr-text: hsl(216, 62%, 49%);
+    --clr-heading: hsl(203, 46%, 51%);
+  }
+  .dark,
+  :root:has(#dark:checked){
+    --clr-body-bg: hsl(210, 17%, 2%);
+    --clr-text: hsl(180, 7%, 35%);
+    --clr-heading: hsl(175, 16%, 70%, 0.336);
+   }
+h1,h2{
+    color: var(--clr-text);
+}
+p,h4{
+    color: var(--clr-heading);
+}

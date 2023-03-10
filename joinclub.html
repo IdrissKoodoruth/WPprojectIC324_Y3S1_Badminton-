@@ -1,0 +1,188 @@
+<!--
+    JOIN CLUB
+--->
+
+<!DOCTYPE HTML>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Join club</title>
+        <link rel="icon" type="image/x-icon" href="LOGO.png">
+        <link rel="stylesheet" href="joinclubcss.css"> 
+        <script src="joinclubjs.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script>
+        <script type = "text/javascript"  src = "validator.js" ></script>
+       
+    </head>
+<body>
+    <div class="banner">
+        <div class="nav">
+            <a href="home.html"><img src="LOGO.png" class="logo" alt="logo"></a>
+            <ul>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="joinclub.html">Join Club</a></li>
+            </ul>
+        </div>
+        <ul class="breadcrumb">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="joinclub.html">Join club</a></li>
+        </ul>
+        <div class="containerform">
+            <div class="header">
+                <h2>Join us now</h2>
+                <p>Fill in the below form to contact us.</p>
+            </div>
+            <form class="form" id="form">
+                <div class="form-control">
+                    <label>First name</label>
+                    <input type="text" placeholder="Jack" id="firstname">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Please enter your first name</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Last name</label>
+                    <input type="text" placeholder="Reacher" id="lastname">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Please enter your last name</small>
+                </div>
+                
+                <div class="form-control">
+                    <label>Age</label>
+                    <input type="number" placeholder="18" id="age">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Please enter your age</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Date Of Birth</label>
+                    <input type="date" placeholder="DD/MM/YYYY" id="DOB">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Please enter your date of birth</small>
+                </div>
+    
+                <div class="form-control">
+                    <p>Gender</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+
+                </div>
+    
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="Email" placeholder="jackreacher@gmail.com" id="Email">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Please enter a valid email address</small>
+                </div>
+    
+                <div class="form-control">
+                    <label>Address</label>
+                    <input type="Address" placeholder="Quatre-Bornes" id="Address">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Please enter your address</small>
+                </div>
+    
+                <div class="form-control">
+                    <label>Contact</label>
+                    <input type="Contact" placeholder="12345678" id="Contact">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Please enter a valid contact</small>
+                </div>
+                
+                <div class="form-control">
+                    <label for="experience">Experience</label>
+                    <select name="experience" id="experience">
+                    <option value="beginner">beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Professional">Professional</option>
+                    </select>
+                    <textarea id="other" placeholder="Other"></textarea>
+                </div>
+
+                <div class="form-control">
+                    <label><br>Password</label>
+                    <input type="password" placeholder="A1234$" id="Password">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                </div>
+
+                <div class="form-control">
+                    <label>Retype your password to confirm</label>
+                    <input type="password" placeholder="A1234$" id="Password2">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                </div>
+                
+                <div class="check">
+                    <p>How did you hear about the event?</p>
+                    <input type="checkbox" id="friends" name="event" value="friends">
+                    <label for="friends">Friends</label><br>
+                    <input type="checkbox" id="local ads" name="event" value="local ads">
+                    <label for="local ads">Local Ads</label><br>
+                    <input type="checkbox" id="social media" name="event" value="social media">
+                    <label for="social media">Social Media</label><br>
+                    <input type="checkbox" id="others" name="event" value="others">
+                    <label for="others">Others</label> 
+                </div>
+               
+                <button type="button" id="submit" onclick="submitForm()">Submit</button>
+            </form>        
+            <script type = "text/javascript" src = "validatorTest.js"></script> 
+        </div>
+        
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="LOGO.png" class="logo">
+                <p>Subscribe to Badminton Encyclopedia youtube channel to watch more videos on how to ideally play badminton and press the bell icon to get immediate notification of latest videos.<br></p>
+            </div>
+            <div class="col">
+                <h3>Location <div class="underline"><span></span></div></h3>
+                <p>Reduit</p>
+                <p>Moka, Mauritius</p>
+                <p class="email-id">badmintonencyclopedia@isp.com</p>
+                <h4>(+230) 12345678</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    <li><a href="joinclub.html">Join Club</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form>
+                    
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Confirm</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Badminton Encyclopedia  ©  2023 - All  Rights  Reserved</p>
+    </footer>
+</body>
+</html>

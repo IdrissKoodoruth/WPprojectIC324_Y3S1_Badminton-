@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>About Us</title>
+	<link rel="icon" type="image/x-icon" href="logo.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css file.css">
+	<script src="aboutUsjs.js"></script>
+<style>
+.container {
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+img {
+	max-width: 100%
+}
+.image {
+	flex-basis: 60%
+}
+.text {
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.parallax {
+  /* The image used */
+  background-image: url('Home1.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+#img2 {
+		border-radius: 50%;
+	}
+</style>
+</head>
+<body>
+	<div class="banner">
+		<div class="nav">
+			<a href="home.html" title="Home">
+				<img src="LOGO.png" class="logo" alt="logo">
+			</a>
+			<ul>
+			<li><a href="posts.html">Posts</a></li>
+			<li><a href="Gallery.html">Gallery</a></li>
+			<li><a href="sitemap.html">Sitemap</a></li>
+			<li><a href="About Us.html">About Us</a></li>
+			<li><a href="Contact Us.html">Contact Us</a></li>
+			<li><a href="joinclub.html">Join Club</a></li>
+			</ul>
+		</div>
+		<ul class="breadcrumb">
+		<li><a href="home.html">Home</a></li>
+		<li><a href="About Us.html">About Us</a></li>
+		</ul>
+		<div class="container">
+			<div class="image">
+				<img src="About Us team picture.jpg" id=img2 alt="Picture of badminton team members in various poses">
+			</div>
+			<div class="text">
+				<h2 style="color:white;text-align: center;">About Us</h2>
+				<p style="color:white;"><br>This blog was founded by Bibi Kawthar Peerbocus, Chetanand Goobodun and Idriss Koodoruth, all three of them students at the University of Mauritius that are passionate about badminton.<br><br>Indeed, Badminton sharpens timeliness and precision without overexerting bodies. This makes it a fun sport for a wide audience from the young to the old.<br><br>This blog is a space of awareness that sensitizes the audience about badminton, and allows people to communicate and share experiences.<br><br>Find us on Facebook and connect with our community. Find us on Instagram and Facebook to get in touch with our network, receive the latest news and find insightful posts. Find us on YouTube to access intuitive videos that will help your interest in badminton grow.<p>
+			</div>
+		</div>
+
+		<div class="RegisteredUsers">
+			<h3><br>Registered Members</h3>
+			<p><br>We are a community of passionate individuals who love to learn and share knowledge.<br>Below is the lists of all registered members coupled with their username.<br><br></p>  
+			<ul id="registered-users"></ul>
+		</div>
+
+	</div>
+	<footer>
+        <div class="row">
+            <div class="col">
+                <img src="LOGO.png" class="logo">
+                <p>Subscribe to Badminton Encyclopedia youtube channel to watch more videos on how to ideally play badminton and press the bell icon to get immediate notification of latest videos.<br></p>
+            </div>
+            <div class="col">
+                <h3>Location <div class="underline"><span></span></div></h3>
+                <p>Reduit</p>
+                <p>Moka, Mauritius</p>
+                <p class="email-id">badmintonencyclopedia@isp.com</p>
+                <h4>(+230) 12345678</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    <li><a href="joinclub.html">Join Club</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form>
+                    
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Confirm</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Badminton Encyclopedia  ©  2023 - All  Rights  Reserved</p>
+    </footer>
+    
+</body>
+</html>
